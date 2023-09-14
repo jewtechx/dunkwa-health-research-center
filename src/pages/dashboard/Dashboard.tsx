@@ -34,7 +34,7 @@ function Dashboard() {
 			//   clickable: true,
 			// }}
 			modules={[Autoplay,EffectFade]}
-			className="mySwiper mx-auto max-w-7xl lg:mb-10"
+			className="mySwiper mx-auto max-w-7xl mb-10"
 			autoplay={{
 			delay: 4500,
 			disableOnInteraction: false,
