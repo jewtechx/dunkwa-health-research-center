@@ -6,7 +6,7 @@
 }
 
 .main-div{
-  @apply max-w-7xl p-6 
+  @apply max-w-7xl p-6 mb-20
 }
 .heading{
   @apply text-2xl text-green-900/90 font-[700] pb-12 shadow-slate-400/10 shadow-md px-6

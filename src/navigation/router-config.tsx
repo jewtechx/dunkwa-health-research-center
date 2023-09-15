@@ -6,27 +6,18 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import NotFound from "../pages/404/NotFound";
-import SignIn from "../pages/auth/SignIn";
 import Layout from "../navigation/layout/main-layout";
 import Dashboard from "../pages/dashboard/Dashboard";
-import Buses from "../pages/buses/Buses";
 import {
   ABOUT,
-  BOOKINGS,
-  BUSES,
+  CONTACT,
   DASHBOARD,
-  DRIVERS,
+  DOCUMENTS,
+  GROUPS,
   MAIN_LAYOUT,
   OUR_TEAM,
-  PROFILE,
-  SETTINGS,
-  TRIPS,
+
 } from "../constants/page-paths";
-import Drivers from "../pages/drivers/Drivers";
-import Trips from "../pages/trips/Trips";
-import Bookings from "../pages/bookings/Bookings";
-import Settings from "../pages/settings/Settings";
-import Profile from "../pages/profile/Profile";
 import About from "../pages/about";
 import AboutPhrc from "../pages/about/aboutPhrc";
 import Mision_vision from "../pages/about/mission-vision";
@@ -38,9 +29,15 @@ import Affiliations from "../pages/about/affiliations";
 import Organogram from "../pages/about/organogram";
 import OurTeam from "../pages/our-team";
 import SupportTeam from "../pages/our-team/support-team";
-
-// const SignIn = React.lazy(() => import("../pages/SignIn"));
-// const Layout = React.lazy(() => import("../navigation/layout/main-layout"));
+import ScienceTeam from "../pages/our-team/science-team";
+import Team_member_detail from "../pages/our-team/team-member-detail";
+import Groups from "../pages/groups";
+import Review_board from "../pages/groups/review-board";
+import Documents from "../pages/documents";
+import AnnualReports from "../pages/documents/annual-reports";
+import Contact from "../pages/contact";
+import FAQ from "../pages/contact/faq";
+import ContactUs from "../pages/contact/contact-us";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -60,15 +57,23 @@ const router = createBrowserRouter(
 
         <Route path={OUR_TEAM} element={<OurTeam />}>
             <Route path="support-team" element={<SupportTeam />}/>
+            <Route path="science-team" element={<ScienceTeam />}/>
+            <Route path="science-team/:id" element={<Team_member_detail />}/>
         </Route>
-        <Route path={BUSES} element={<Buses />} />
-        <Route path={BOOKINGS} element={<Bookings />} />
-        <Route path={DRIVERS} element={<Drivers />} />
-        <Route path={TRIPS} element={<Trips />} />
-        <Route path={SETTINGS} element={<Settings />} />
-        <Route path={PROFILE} element={<Profile />} />
+
+        <Route path={GROUPS} element={<Groups />}>
+            <Route path="review-board" element={<Review_board />}/>
+        </Route>
+
+        <Route path={DOCUMENTS} element={<Documents />}>
+            <Route path="annual-reports" element={<AnnualReports />}/>
+        </Route>
+
+        <Route path={CONTACT} element={<Contact />}>
+            <Route path="contact-us" element={<ContactUs />}/>
+            <Route path="faq" element={<FAQ />}/>
+        </Route>
       </Route>
-      <Route path="/login" element={<SignIn />} />
       <Route path="*" element={<NotFound />} />
     </>
   )
