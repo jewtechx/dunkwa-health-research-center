@@ -6,7 +6,7 @@ import footerRibbon from '../../../assets/images/footer-ribbon.png'
 
 export default function footer() {
   return (
-    <footer className="bg-black/95 relative -z-10 pt-8 w-full flex items-center justify-center" aria-labelledby="footer-heading">
+    <footer className="bg-black/95 relative pt-8 w-full flex items-center justify-center" aria-labelledby="footer-heading">
     <h2 id="footer-heading" className="sr-only">
       Footer
     </h2>

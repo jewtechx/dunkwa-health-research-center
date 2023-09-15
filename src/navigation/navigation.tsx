@@ -1,4 +1,4 @@
-import { ArrowDown2, Location } from "iconsax-react";
+import { ArrowDown3, Location } from "iconsax-react";
 import { ReactNode } from "react";
 import { BiLogoLinkedin, BiPhoneCall, BiSolidDownArrow } from "react-icons/bi";
 
@@ -18,33 +18,33 @@ const navigation: items[] = [
   },
   {
     name: "ABOUT US",
-    href: "/buses",
-    icon: <ArrowDown2/>,
+    href: "#",
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
-      { name: "About PHRC", href: "/option1" },
-      { name: "Our Mission, Vision & Vs", href: "/option2" },
-      { name: "Our Mission, Vision & Vs", href: "/option2" },
-      { name: "Founding Fathers", href: "/option2" },
-      { name: "Advisory Board", href: "/option2" },
-      { name: "Management Commitee", href: "/option2" },
-      { name: "Partners", href: "/option2" },
-      { name: "Affiliations", href: "/option2" },
+      { name: "About PHRC", href: "/about/about-us" },
+      { name: "Our Mission, Vision & Vs", href: "/about/mision-vision" },
+      { name: "Founding Fathers", href: "/about/founding-fathers" },
+      { name: "Advisory Board", href: "/about/advisory-board" },
+      { name: "Management Commitee", href: "/about/management-commitee" },
+      { name: "Partners", href: "/about/partners" },
+      { name: "Affiliations", href: "/about/affiliations" },
+      { name: "Organogram", href: "/about/organogram" },
     ],
   },
   {
     name: "OUR TEAM",
-    href: "/drivers",
-    icon: <ArrowDown2/>,
+    href: "#",
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
-      { name: "Science Team", href: "/option1" },
-      { name: "Support Team", href: "/option2" },
+      { name: "Science Team", href: "/our-team/science-team" },
+      { name: "Support Team", href: "/our-team/support-team" },
       // Add more dropdown items as needed
     ],
   },
   {
     name: "GROUPS",
     href: "/bookings",
-    icon: <ArrowDown2/>,
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
       { name: "Clinical Science", href: "/option1" },
       { name: "Biomedical Science", href: "/option2" },
@@ -61,7 +61,7 @@ const navigation: items[] = [
   {
     name: "FACILITIES",
     href: "/trips",
-    icon: <ArrowDown2/>,
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
       { name: "Health Facilities", href: "/option1" },
       { name: "Data Centre/ICT", href: "/option2" },
@@ -77,7 +77,7 @@ const navigation: items[] = [
   {
     name: "RESEARCH",
     href: "/trips",
-    icon: <ArrowDown2/>,
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
       { name: "2022:Titles", href: "/option1" },
       // Add more dropdown items as needed
@@ -86,7 +86,7 @@ const navigation: items[] = [
   {
     name: "DOCUMENTS",
     href: "/trips",
-    icon: <ArrowDown2/>,
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
       { name: "Research Reports", href: "/option1" },
       { name: "Publications", href: "/option2" },
@@ -98,7 +98,7 @@ const navigation: items[] = [
   {
     name: "CONTACT US",
     href: "/trips",
-    icon: <ArrowDown2/>,
+    icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
       { name: "Contact Us", href: "/option1" },
       { name: "FAQ", href: "/option2" },
@@ -109,25 +109,7 @@ const navigation: items[] = [
 
 
 const footerNavigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
-  ],
+
   contact: [
     {icon:<Location className="w-4 h-4"/>, name: 'Address:', value: 'Ghana' },
     { icon:<BiPhoneCall/> ,name: 'Phone', value: '+233 (0) 50 469 8534' },
