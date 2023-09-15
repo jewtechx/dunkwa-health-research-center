@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-col items-center mb-10 justify-center">
+      <div className="z-20 shadow-sm bg-slate-50 sticky top-0 flex flex-col items-center mb-10 justify-center">
         <div>
           <img src={topNavImg} />
         </div>
@@ -28,12 +28,12 @@ function Navbar() {
                   <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-x-10">
                       <div className="flex-shrink-0 ">
-                        <Link to="/">
+                        {/* <Link to="/">
                           <h2 className="text-white">AppName</h2>
-                        </Link>
+                        </Link> */}
                       </div>
                       <div className="hidden md:block relative">
-                        <div className="flex items-baseline space-x-1">
+                        <div className="flex items-baseline space-x-1 z-10">
                           {navigation.map((item, index) => (
                             <Fragment key={item.name}>
                               {/* Render NavLink */}
@@ -41,13 +41,13 @@ function Navbar() {
                                 to={item.href}
                                 className={classNames(
                                   "text-green-900 flex w-full items-center gap-x-1 hover:bg-green-800 hover:text-white",
-                                  "rounded-md px-3 py-2 text-[13px] whitespace-nowrap font-bold"
+                                  "rounded-md px-2 py-2 whitespace-nowrap font-bold"
                                 )}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                               >
-                                {item.name}
-                                {item.icon}
+                                <span className="text-[9px] lg:text-[13px]">{item.name}</span>
+                                <span className="text-xs">{item.icon}</span>
                               </NavLink>
                               
                               {/* Render Dropdown inside a Transition */}
@@ -64,7 +64,7 @@ function Navbar() {
                                   <div onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)} className="origin-top-right border-t-2 border-green-900 absolute  -right-24  mt-3 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                                     <div
-                                      className="py-1"
+                                      className="py-1 z-10"
                                       role="menu"
                                       aria-orientation="vertical"
                                       aria-labelledby="options-menu"
@@ -122,7 +122,7 @@ function Navbar() {
                       </div>
                     </div> */}
  
-                        <div className="flex gap-4 mr-2">
+                        <div className="flex gap-2 mr-2 md:-mr-28 ">
                           <a href="https://www.facebook.com" className="p-2 rounded-full shadow-lg"><BiLogoFacebook /></a>
                           <a href="https://www.twitter.com" className="p-2 rounded-full shadow-lg"><BiLogoTwitter /></a>
                           <a href="https://www.linkedin.com" className="p-2 rounded-full shadow-lg"><BiLogoLinkedin /></a>
