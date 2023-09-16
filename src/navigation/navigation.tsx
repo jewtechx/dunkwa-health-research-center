@@ -43,16 +43,16 @@ const navigation: items[] = [
   },
   {
     name: "GROUPS",
-    href: "/bookings",
+    href: "#",
     icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
-      { name: "Clinical Science", href: "/groups" },
-      { name: "Biomedical Science", href: "/groups" },
-      { name: "Data Science", href: "/groups" },
-      { name: "Social & Population Science", href: "/groups" },
-      { name: "Environmental Science", href: "/groups" },
-      { name: "Health Systems", href: "/groups" },
-      { name: "Neglected Tropical Diseases", href: "/groups" },
+      { name: "Clinical Science", href: "/groups/#" },
+      { name: "Biomedical Science", href: "/groups/#" },
+      { name: "Data Science", href: "/groups/#" },
+      { name: "Social & Population Science", href: "/groups/#" },
+      { name: "Environmental Science", href: "/groups/#" },
+      { name: "Health Systems", href: "/groups/#" },
+      { name: "Neglected Tropical Diseases", href: "/groups/#" },
       { name: "Review Board", href: "/groups/review-board" },
       // Add more dropdown items as needed
     ],
@@ -60,32 +60,32 @@ const navigation: items[] = [
 
   {
     name: "FACILITIES",
-    href: "/trips",
+    href: "#",
     icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
-      { name: "Health Facilities", href: "/option1" },
-      { name: "Data Centre/ICT", href: "/option2" },
-      { name: "Biomedical Laboratory", href: "/option2" },
-      { name: "Pharmacy", href: "/option2" },
-      { name: "Clinical Trial Centre", href: "/option2" },
-      { name: "Field Sites", href: "/option2" },
-      { name: "Archives", href: "/option2" },
-      { name: "Hospitality", href: "/option2" },
+      { name: "Health Facilities", href: "/#" },
+      { name: "Data Centre/ICT", href: "/#" },
+      { name: "Biomedical Laboratory", href: "/#" },
+      { name: "Pharmacy", href: "/#" },
+      { name: "Clinical Trial Centre", href: "/#" },
+      { name: "Field Sites", href: "/#" },
+      { name: "Archives", href: "/#" },
+      { name: "Hospitality", href: "/#" },
       // Add more dropdown items as needed
     ],
   },
   {
     name: "RESEARCH",
-    href: "/trips",
+    href: "#",
     icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
-      { name: "2022:Titles", href: "/option1" },
+      { name: "2022:Titles", href: "/#" },
       // Add more dropdown items as needed
     ],
   },
   {
     name: "DOCUMENTS",
-    href: "/trips",
+    href: "#",
     icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
       { name: "Research Reports", href: "/documents/#" },
@@ -97,11 +97,11 @@ const navigation: items[] = [
   },
   {
     name: "CONTACT US",
-    href: "/trips",
+    href: "#",
     icon: <ArrowDown3 className="w-4 h-4"/>,
     dropdownItems: [
-      { name: "Contact Us", href: "/option1" },
-      { name: "FAQ", href: "/option2" },
+      { name: "Contact Us", href: "/contact/contact-us" },
+      { name: "FAQ", href: "/contact/faq" },
       // Add more dropdown items as needed
     ],
   },
