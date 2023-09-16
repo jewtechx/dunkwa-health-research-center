@@ -19,7 +19,7 @@ const navigation: items[] = [
   {
     name: "ABOUT US",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "About PHRC", href: "/about/about-us" },
       { name: "Our Mission, Vision & Vs", href: "/about/mision-vision" },
@@ -34,7 +34,7 @@ const navigation: items[] = [
   {
     name: "OUR TEAM",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "Science Team", href: "/our-team/science-team" },
       { name: "Support Team", href: "/our-team/support-team" },
@@ -44,7 +44,7 @@ const navigation: items[] = [
   {
     name: "GROUPS",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "Clinical Science", href: "/groups/#" },
       { name: "Biomedical Science", href: "/groups/#" },
@@ -61,7 +61,7 @@ const navigation: items[] = [
   {
     name: "FACILITIES",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "Health Facilities", href: "/#" },
       { name: "Data Centre/ICT", href: "/#" },
@@ -77,7 +77,7 @@ const navigation: items[] = [
   {
     name: "RESEARCH",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "2022:Titles", href: "/#" },
       // Add more dropdown items as needed
@@ -86,7 +86,7 @@ const navigation: items[] = [
   {
     name: "DOCUMENTS",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "Research Reports", href: "/documents/#" },
       { name: "Publications", href: "/documents/#" },
@@ -98,7 +98,7 @@ const navigation: items[] = [
   {
     name: "CONTACT US",
     href: "#",
-    icon: <ArrowDown3 className="w-4 h-4"/>,
+    icon: <ArrowDown3 className="w-[0.7rem] h-[0.7rem]"/>,
     dropdownItems: [
       { name: "Contact Us", href: "/contact/contact-us" },
       { name: "FAQ", href: "/contact/faq" },
@@ -111,7 +111,7 @@ const navigation: items[] = [
 const footerNavigation = {
 
   contact: [
-    {icon:<Location className="w-4 h-4"/>, name: 'Address:', value: 'Ghana' },
+    {icon:<Location className="w-[0.7rem] h-[0.7rem]"/>, name: 'Address:', value: 'Ghana' },
     { icon:<BiPhoneCall/> ,name: 'Phone', value: '+233 (0) 50 469 8534' },
   ],
   social: [

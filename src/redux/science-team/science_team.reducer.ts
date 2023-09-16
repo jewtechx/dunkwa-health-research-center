@@ -14,6 +14,12 @@ const initialState = [
         interests:"Cancer research, Clinical Investigation,Communicable diseases, Health Systems."
     },
     {
+        name: "Dr. Daniel Acorlor",
+        role: "Municipal Director Of Health Services",
+        qualifications: "MD, MSc",
+        interests:"	Clinical Research, Maternal and Child Health, Health Systems"
+    },
+    {
         name: "Dr John Benjamin Annan",
         role: "Medical Superintendent & Clinical investigator",
         qualifications: "BSc, MBChB, MPH",

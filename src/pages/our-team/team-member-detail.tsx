@@ -1,6 +1,10 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
+import Abrahamoduro from './abrahamoduro'
+import BAwuah from './bawuah'
+import Acolor from './acolor'
+import Annan from './annan'
 
 type state = {
     [x: string]: any
@@ -17,13 +21,10 @@ export default function Team_member_detail() {
     const person = useSelector((state: state[]) => state.science_team);
   return (
       <div className='main-div'>
-          <div className="flex flex-col gap-4">
-              <img className='w-40 h-40'/>
-               <div className="flex flex-col gap-2">
-                  
-               </div>
-               <h1>Member {person[params.id].name}</h1>
-          </div>
+      {params.id == '0' && <Abrahamoduro />}
+      {params.id == '1' && <BAwuah />}
+      {params.id == '2' && <Acolor />}
+      {params.id == '3' && <Annan />}
     </div>
   )
 }

@@ -76,8 +76,8 @@ export default function footer() {
         </div>
 
         <div className="flex text-slate-200/80 text-lg">
-            <Link to={'faq'} className='px-2'>FAQs</Link>
-            <Link to={'contact'} className='px-2 border-l'>Contact</Link>
+            <Link to={'contact/faq'} className='px-2'>FAQs</Link>
+            <Link to={'contact/contact-us'} className='px-2 border-l'>Contact</Link>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function ScienceTeam() {
       <div className="main-dev flex flex-col justify-center">
         <h1 className="heading text-center">OUR TEAM</h1>
   
-        <table className='border-collapse border border-slate-400'>
+        <table className='mb-20 border-collapse border border-slate-400'>
           <thead>
             <tr className='heading text-lg font-[500]'>
               <th className='p-4 border border-slate-300'>NAME</th>
