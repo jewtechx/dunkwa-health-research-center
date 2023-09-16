@@ -38,6 +38,7 @@ import AnnualReports from "../pages/documents/annual-reports";
 import Contact from "../pages/contact";
 import FAQ from "../pages/contact/faq";
 import ContactUs from "../pages/contact/contact-us";
+import Gallery from "../pages/documents/gallery";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -67,6 +68,7 @@ const router = createBrowserRouter(
 
         <Route path={DOCUMENTS} element={<Documents />}>
             <Route path="annual-reports" element={<AnnualReports />}/>
+            <Route path="gallery" element={<Gallery />}/>
         </Route>
 
         <Route path={CONTACT} element={<Contact />}>

@@ -91,7 +91,7 @@ const navigation: items[] = [
       { name: "Research Reports", href: "/documents/#" },
       { name: "Publications", href: "/documents/#" },
       { name: "Annual Reports", href: "/documents/annual-reports" },
-      { name: "Gallery", href: "/documents/#  " },
+      { name: "Gallery", href: "/documents/gallery  " },
       // Add more dropdown items as needed
     ],
   },
