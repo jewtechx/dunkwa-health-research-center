@@ -5,6 +5,9 @@ import Abrahamoduro from './abrahamoduro'
 import BAwuah from './bawuah'
 import Acolor from './acolor'
 import Annan from './annan'
+import Opare from './opare'
+import James from './james'
+import Ellen from './ellen'
 
 type state = {
     [x: string]: any
@@ -25,6 +28,9 @@ export default function Team_member_detail() {
       {params.id == '1' && <BAwuah />}
       {params.id == '2' && <Acolor />}
       {params.id == '3' && <Annan />}
+      {params.id == '4' && <Opare />}
+      {params.id == '5' && <James />}
+      {params.id == '6' && <Ellen />}
     </div>
   )
 }
